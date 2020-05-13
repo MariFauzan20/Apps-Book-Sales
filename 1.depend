@@ -2,10 +2,21 @@
 1589091855 source:d:\struktur data\tubes\multilinklist\1\main.cpp
 	"multiLink.cpp"
 
-1589100811 d:\struktur data\tubes\multilinklist\1\multilink.cpp
+1589280072 d:\struktur data\tubes\multilinklist\1\multilink.cpp
 	"multiLink.h"
 
-1589099715 d:\struktur data\tubes\multilinklist\1\multilink.h
+1589210650 d:\struktur data\tubes\multilinklist\1\multilink.h
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1589091855 source:d:\struktur data\tubes\aplikasi penjualan buku\main.cpp
+	"multiLink.cpp"
+
+1589280072 d:\struktur data\tubes\aplikasi penjualan buku\multilink.cpp
+	"multiLink.h"
+
+1589210650 d:\struktur data\tubes\aplikasi penjualan buku\multilink.h
 	<iostream>
 	<stdlib.h>
 	<time.h>

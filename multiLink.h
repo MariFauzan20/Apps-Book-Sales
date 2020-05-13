@@ -13,12 +13,15 @@ struct buku
     string penerbit;
     string tahun;
     string ISBN;
+    int stok;
+    int harga;
 };
 
 struct pembeli
 {
     string nama;
     string noTelepon;
+    int jumlah;
 };
 
 typedef buku infotypeBaris;
@@ -50,13 +53,13 @@ void createList(List &L);
 int countElementB(List L);
 int countElementK(addressB L);
 
-void addFirstB(string judul, string pengarang, string penerbit, string tahun, string ISBN, List &L);
-void addAfterB(addressB &prev, string judul, string pengarang, string penerbit, string tahun, string ISBN);
-void addLastB(string judul, string pengarang, string penerbit, string tahun, string ISBN, List &L);
+void addFirstB(string judul, string pengarang, string penerbit, string tahun, string ISBN, int stok, int harga, List &L);
+void addAfterB(addressB &prev, string judul, string pengarang, string penerbit, string tahun, string ISBN, int stok, int harga);
+void addLastB(string judul, string pengarang, string penerbit, string tahun, string ISBN, int stok, int harga, List &L);
 
-void addFirstK(string nama, string noTelepon, addressB &L);
-void addAfterK(addressK &prev, string nama, string noTelepon);
-void addLastK(string nama, string noTelepon, addressB &L);
+void addFirstK(string nama, string noTelepon, int jumlah, addressB &L);
+void addAfterK(addressK &prev, string nama, string noTelepon, int jumlah);
+void addLastK(string nama, string noTelepon, int jumlah, addressB &L);
 
 void delFirstK(addressB &L);
 void delAfterK(addressK &prev);
@@ -77,5 +80,9 @@ void tambahBuku();
 void cari();
 void editBuku();
 void hapusBuku();
+void pembelian();
+void dataPembeli();
+void dataPenjualan();
+void cariPembeli();
 
 #endif // MULTILINK_H_INCLUDED
